@@ -5,7 +5,63 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TITIKOMA</title>
+  <link rel="stylesheet" href="/src/css/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/290dc399a6.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="h-auto grid grid-cols-12 bg-primary gap-3 font-poppins">
+    <div class="col-span-12 bg-primary h-[75px] flex flex-row justify-between">
+      <div class="flex flex-col justify-center px-7 lg:ml-14 w-56">
+        <img src="../assets/images/semicolon-logo.png" alt="">
+      </div>
+      <div class="hidden lg:inline-flex">
+        <div class="h-auto flex flex-row justify-between">
+          <div class="h-auto mx-5 flex flex-col justify-center">
+            <h1 class="text-white text-center border-b"><a href="#">Home</a></h1>
+          </div>
+          <div class="mx-5 flex flex-col justify-center">
+            <h1 class="text-white text-center hover:border-b"><a href="#">Menu</a></h1>
+          </div>
+          <div class="h-auto mx-5 flex flex-col justify-center">
+            <h1 class="text-white text-center hover:border-b"><a href="#">Testimonial</a></h1>
+          </div>
+          <div class="h-auto mx-5 flex flex-col justify-center">
+            <h1 class="text-white text-center hover:border-b"><a href="#">Contact</a></h1>
+          </div>
+          <div class="h-auto mx-5 flex flex-col justify-center">
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center px-7 lg:mr-14">
+        <span class="w-[35px] h-auto my-auto border border-gray-400 rounded-md lg:hidden" onclick="openSidebar()">
+          <svg class="w-6 h-6 m-auto text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>    
+        </span>
+        <span class="hidden lg:inline-block">
+          <a href="#"><svg class="w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg></a>
+        </span>
+      </div>
+      <div class="h-auto w-screen mt-[75px] -top-[283px] fixed bg-primary flex flex-col justify-center lg:hidden" id="navbar">
+        <div class="h-auto border-t py-2">
+          <h1 class="text-white text-center"><a href="#">Home</a></h1>
+        </div>
+        <div class="h-auto border-t py-2">
+          <h1 class="text-white text-center"><a href="#">Menu</a></h1>
+        </div>
+        <div class="h-auto border-t py-2">
+          <h1 class="text-white text-center"><a href="#">Testimonial</a></h1>
+        </div>
+        <div class="h-auto border-t py-2">
+          <h1 class="text-white text-center"><a href="#">Contact</a></h1>
+        </div>
+        <div class="h-auto border-t py-2 flex justify-center">
+          <a href="#"><svg class="w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+<script src="/src/js/script.js"></script>
 </html>
