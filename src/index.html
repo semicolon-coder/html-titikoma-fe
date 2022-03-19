@@ -37,7 +37,7 @@
         </div>
       </div>
       <div class="flex flex-col justify-center px-7 lg:mr-16">
-        <span class="w-[35px] h-auto my-auto border border-gray-400 rounded-md lg:hidden" onclick="openSidebar()">
+        <span class="w-[35px] h-auto my-auto border border-white rounded-md lg:hidden" onclick="openSidebar()">
           <svg class="w-6 h-6 m-auto text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>    
         </span>
         <span class="hidden lg:inline-block">
@@ -76,11 +76,12 @@
   
   </div>
 
-  <div class="grid grid-cols-12 gap-4 mx-8 font-poppins lg:px-16 my-12 lg:mx-8">
-    <div class="col-span-12">
+  <!-- Main Content -->
+  <div class="grid grid-cols-12 gap-4 mx-8 font-poppins lg:px-16 lg:mx-8">
+    <div class="col-span-12 mt-16">
       <h1 class="text-primary text-center font-bold text-2xl">Popular Menu</h1>
     </div>
-    <div class="col-span-12 md:col-span-6 lg:col-span-3">
+    <div class="col-span-12 md:col-span-6 lg:col-span-3 hover:shadow-xl transition duration-300">
       <div class="rounded-lg bg-white shadow-md overflow-hidden">
         <img class="h-64 w-full object-cover" src="../assets/product-img/americano.jpg" alt="">
         <div class="p-3 text-center lg:text-left">
@@ -89,33 +90,89 @@
         </div>
       </div>
     </div>
-    <div class="col-span-12 md:col-span-6 lg:col-span-3">
+    <div class="col-span-12 md:col-span-6 lg:col-span-3 hover:shadow-xl transition duration-300">
       <div class="rounded-lg bg-white shadow-md overflow-hidden">
         <img class="h-64 w-full object-cover" src="../assets/product-img/cappucino.jpg" alt="">
         <div class="p-3 text-center lg:text-left">
-          <h1 class="font-semibold">Arabica Coffee</h1>
-          <p>Rp 15.000</p>
+          <h1 class="font-semibold">Capuccino Coffee</h1>
+          <p>Rp 21.000</p>
         </div>
       </div>
     </div>
-    <div class="col-span-12 md:col-span-6 lg:col-span-3">
+    <div class="col-span-12 md:col-span-6 lg:col-span-3 hover:shadow-xl transition duration-300">
       <div class="rounded-lg bg-white shadow-md overflow-hidden">
         <img class="h-64 w-full object-cover" src="../assets/product-img/lemon-splash.jpg" alt="">
         <div class="p-3 text-center lg:text-left">
-          <h1 class="font-semibold">Arabica Coffee</h1>
-          <p>Rp 15.000</p>
+          <h1 class="font-semibold">Lemon Splash</h1>
+          <p>Rp 24.000</p>
         </div>
       </div>
     </div>
-    <div class="col-span-12 md:col-span-6 lg:col-span-3">
+    <div class="col-span-12 md:col-span-6 lg:col-span-3 hover:shadow-xl transition duration-300">
       <div class="rounded-lg bg-white shadow-md overflow-hidden">
         <img class="h-64 w-full object-cover" src="../assets/product-img/sandwich.jpg" alt="">
         <div class="p-3 text-center lg:text-left">
-          <h1 class="font-semibold">Arabica Coffee</h1>
-          <p>Rp 15.000</p>
+          <h1 class="font-semibold">Sandwich</h1>
+          <p>Rp 22.000</p>
         </div>
       </div>
     </div>
+    <div class="col-span-12 mt-20 rounded-lg bg-white shadow-md overflow-hidden md:flex md:flex-row border">
+      <img class="h-64 md:h-72 w-full object-cover md:w-2/3" src="../assets/product-img/beef-taco.jpg" alt="">
+      <div class="md:flex md:flex-col justify-center">
+        <div class="p-4 text-center md:px-24">
+          <h1 class="font-bold text-lg">Melihat pemandangan bagus dengan <span class="text-primary">Beef Taco</span></h1>
+          <p class="mt-3">Ajak teman-teman Anda dan nikmati pemandangan dengan Beef Taco! Promo! Beli 2 dapat 1.</p>
+          <button class="mt-6 py-2 px-6 bg-primary rounded-full text-white shadow-md hover:shadow-xl transition duration-300"><a href="#">Beli Sekarang</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="col-span-12 mt-20 rounded-lg bg-white shadow-md overflow-hidden md:flex md:flex-row-reverse border">
+      <img class="h-64 md:h-72 w-full object-cover md:w-2/3" src="../assets/product-img/cappucino.jpg" alt="">
+      <div class="md:flex md:flex-col justify-center">
+        <div class="p-4 text-center md:px-24">
+          <h1 class="font-bold text-lg">Segarkan dengan <span class="text-primary">Capuccino Coffee</span></h1>
+          <p class="mt-3">Segelas cappucino dengan taburan lembut dapat menyegarkan pikiran Anda dan meningkatkan inspirasi Anda.</p>
+          <button class="mt-6 py-2 px-6 bg-primary rounded-full text-white shadow-md hover:shadow-xl transition duration-300"><a href="#">Beli Sekarang</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonial -->
+  <div class="mt-20 bg-primary/20 w-full py-8">
+    <div class="mx-8 font-poppins lg:px-16 grid grid-cols-12 gap-4">
+      <div class="col-span-6 mx-8 font-poppins lg:px-16 grid grid-cols-12 gap-4">
+        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg p-5">
+          <div class="ml-2 flex text-center flex-col">
+            <img class="w-16 h-16 bg-cover m-auto rounded-md" src="../assets/images/ryandmasiv.jpg" alt="">
+            <h1 class="font-semibold text-lg">Ryan Adi Saputra</h1>
+            <p class="font-thin">Freelance</p>
+          </div>
+          <p class="mt-5 text-center">Titikoma; memang terbaik, minuman dan makanan disini cukup terjangkau bagi kantong anak muda serta pelayanan yang modern, berbeda dengan kafe lain pada umumnya. Wajib datang, kalian pasti tidak akan kecewa.</p>
+        </div>
+        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg p-5">
+          <div class="ml-2 flex text-center flex-col">
+            <img class="w-16 h-16 bg-cover m-auto rounded-md" src="../assets/images/ryandmasiv.jpg" alt="">
+            <h1 class="font-semibold text-lg">Ryan Adi Saputra</h1>
+            <p class="font-thin">Freelance</p>
+          </div>
+          <p class="mt-5 text-center">Titikoma; memang terbaik, minuman dan makanan disini cukup terjangkau bagi kantong anak muda serta pelayanan yang modern, berbeda dengan kafe lain pada umumnya. Wajib datang, kalian pasti tidak akan kecewa.</p>
+        </div>
+        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg p-5">
+          <div class="ml-2 flex text-center flex-col">
+            <img class="w-16 h-16 bg-cover m-auto rounded-md" src="../assets/images/ryandmasiv.jpg" alt="">
+            <h1 class="font-semibold text-lg">Ryan Adi Saputra</h1>
+            <p class="font-thin">Freelance</p>
+          </div>
+          <p class="mt-5 text-center">Titikoma; memang terbaik, minuman dan makanan disini cukup terjangkau bagi kantong anak muda serta pelayanan yang modern, berbeda dengan kafe lain pada umumnya. Wajib datang, kalian pasti tidak akan kecewa.</p>
+        </div>
+      </div>
+      <div class="col-span-4">
+        
+      </div>
+    </div>
+    
   </div>
 </body>
 <script src="/src/js/script.js"></script>
