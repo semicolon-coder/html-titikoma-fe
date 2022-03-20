@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - TITIKOMA</title>
+  <link rel="stylesheet" href="/src/css/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/290dc399a6.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="grid grid-cols-12 font-poppins">
+    <div class="col-span-12 bg-primary h-[75px] flex flex-row justify-between">
+      <div class="flex flex-col justify-center px-7 lg:ml-16 w-56">
+        <img src="../assets/images/semicolon-logo.png" alt="">
+      </div>
+      <div class="hidden lg:inline-flex">
+        <div class="h-auto flex flex-row justify-between">
+          <div class="h-auto mx-5 flex flex-col justify-center">
+            <h1 class="text-white text-center hover:border-b"><a href="/src/index.html">Home</a></h1>
+          </div>
+          <div class="mx-5 flex flex-col justify-center">
+            <h1 class="text-white text-center border-b"><a href="/src/menu.html">Menu</a></h1>
+          </div>
+          <div class="h-auto mx-5 flex flex-col justify-center">
+            <h1 class="text-white text-center hover:border-b"><a href="/src/testimonial.html">Testimonial</a></h1>
+          </div>
+          <div class="h-auto mx-5 flex flex-col justify-center">
+            <h1 class="text-white text-center hover:border-b"><a href="/src/contact.html">Contact</a></h1>
+          </div>
+          <div class="h-auto mx-5 flex flex-col justify-center">
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center px-7 lg:mr-16">
+        <span class="w-[35px] h-auto my-auto border border-white rounded-md lg:hidden" onclick="openSidebar()">
+          <svg class="w-6 h-6 m-auto text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>    
+        </span>
+        <span class="hidden lg:inline-block">
+          <a href="#"><svg class="w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg></a>
+        </span>
+      </div>
+      <div class="h-auto w-screen mt-[75px] absolute right-0 -top-[283px] bg-primary flex flex-col justify-center lg:hidden" id="navbar">
+        <div class="h-auto border-t py-2">
+          <h1 class="text-white text-center"><a href="/src/index.html">Home</a></h1>
+        </div>
+        <div class="h-auto border-t py-2">
+          <h1 class="text-white text-center"><a href="/src/menu.html">Menu</a></h1>
+        </div>
+        <div class="h-auto border-t py-2">
+          <h1 class="text-white text-center"><a href="/src/testimonia.html">Testimonial</a></h1>
+        </div>
+        <div class="h-auto border-t py-2">
+          <h1 class="text-white text-center"><a href="/src/contact.html">Contact</a></h1>
+        </div>
+        <div class="h-auto border-t py-2 flex justify-center">
+          <a href="#"><svg class="w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <img class="object-cover h-96 lg:h-[550px] w-full" src="../assets/images/Menu_Banner_1.png" alt="">
+
+  <!-- Category -->
+  <div class="flex flex-row flex-wrap gap-4 justify-center mt-20 text-secondary">
+    <div class="bg-primary text-white border rounded-full px-4 py-2 transition duration-300 hover:bg-primary hover:text-white">
+      <button><a href="#">Semua</a></button>
+    </div>
+    <div class="border rounded-full px-4 py-2 transition duration-300 hover:bg-primary hover:text-white">
+      <button><a href="#">Makanan</a></button>
+    </div>
+    <div class="border rounded-full px-4 py-2 transition duration-300 hover:bg-primary hover:text-white">
+      <button><a href="#">Kopi</a></button>
+    </div>
+    <div class="border rounded-full px-4 py-2 transition duration-300 hover:bg-primary hover:text-white">
+      <button><a href="#">Non-kopi</a></button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="grid grid-cols-12 gap-6 mx-8 font-poppins lg:px-16 lg:mx-8 mt-10">
+    <div class="col-span-12 md:col-span-6 lg:col-span-3 hover:shadow-xl transition duration-300">
+      <div class="rounded-lg bg-white shadow-md overflow-hidden">
+        <img class="h-64 w-full object-cover" src="../assets/product-img/cappucino.jpg" alt="">
+        <div class="flex flex-row justify-between p-3 px-5">
+          <div class="text-left">
+            <h1 class="font-semibold">Capuccino Coffee</h1>
+            <p>Rp 21.000</p>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="border rounded-full px-4 py-2 transition duration-300 hover:bg-primary hover:text-white">
+              <button><a href="#">Tambah</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-span-12 md:col-span-6 lg:col-span-3 hover:shadow-xl transition duration-300">
+      <div class="rounded-lg bg-white shadow-md overflow-hidden">
+        <img class="h-64 w-full object-cover" src="../assets/product-img/americano.jpg" alt="">
+        <div class="flex flex-row justify-between p-3 px-5">
+          <div class="text-left">
+            <h1 class="font-semibold">Americano Coffee</h1>
+            <p>Rp 16.000</p>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="border rounded-full px-4 py-2 transition duration-300 hover:bg-primary hover:text-white">
+              <button><a href="#">Tambah</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-span-12 md:col-span-6 lg:col-span-3 hover:shadow-xl transition duration-300">
+      <div class="rounded-lg bg-white shadow-md overflow-hidden">
+        <img class="h-64 w-full object-cover" src="../assets/product-img/beef-taco.jpg" alt="">
+        <div class="flex flex-row justify-between p-3 px-5">
+          <div class="text-left">
+            <h1 class="font-semibold">Beef Taco</h1>
+            <p>Rp 25.000</p>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="border rounded-full px-4 py-2 transition duration-300 hover:bg-primary hover:text-white">
+              <button><a href="#">Tambah</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-span-12 md:col-span-6 lg:col-span-3 hover:shadow-xl transition duration-300">
+      <div class="rounded-lg bg-white shadow-md overflow-hidden">
+        <img class="h-64 w-full object-cover" src="../assets/product-img/celery-juice.jpg" alt="">
+        <div class="flex flex-row justify-between p-3 px-5">
+          <div class="text-left">
+            <h1 class="font-semibold">Jus Seledri</h1>
+            <p>Rp 15.000</p>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="border rounded-full px-4 py-2 transition duration-300 hover:bg-primary hover:text-white">
+              <button><a href="#">Tambah</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-span-12 md:col-span-6 lg:col-span-3 hover:shadow-xl transition duration-300">
+      <div class="rounded-lg bg-white shadow-md overflow-hidden">
+        <img class="h-64 w-full object-cover" src="../assets/product-img/hamburger.jpg" alt="">
+        <div class="flex flex-row justify-between p-3 px-5">
+          <div class="text-left">
+            <h1 class="font-semibold">Hamburger</h1>
+            <p>Rp 23.000</p>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="border rounded-full px-4 py-2 transition duration-300 hover:bg-primary hover:text-white">
+              <button><a href="#">Tambah</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-span-12 md:col-span-6 lg:col-span-3 hover:shadow-xl transition duration-300">
+      <div class="rounded-lg bg-white shadow-md overflow-hidden">
+        <img class="h-64 w-full object-cover" src="../assets/product-img/kentang-goreng.jpg" alt="">
+        <div class="flex flex-row justify-between p-3 px-5">
+          <div class="text-left">
+            <h1 class="font-semibold">Kentang Goreng</h1>
+            <p>Rp 12.000</p>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="border rounded-full px-4 py-2 transition duration-300 hover:bg-primary hover:text-white">
+              <button><a href="#">Tambah</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-span-12 md:col-span-6 lg:col-span-3 hover:shadow-xl transition duration-300">
+      <div class="rounded-lg bg-white shadow-md overflow-hidden">
+        <img class="h-64 w-full object-cover" src="../assets/product-img/latte.jpg" alt="">
+        <div class="flex flex-row justify-between p-3 px-5">
+          <div class="text-left">
+            <h1 class="font-semibold">Vanilla Latte</h1>
+            <p>Rp 23.000</p>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="border rounded-full px-4 py-2 transition duration-300 hover:bg-primary hover:text-white">
+              <button><a href="#">Tambah</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-span-12 md:col-span-6 lg:col-span-3 hover:shadow-xl transition duration-300">
+      <div class="rounded-lg bg-white shadow-md overflow-hidden">
+        <img class="h-64 w-full object-cover" src="../assets/product-img/lemon-splash.jpg" alt="">
+        <div class="flex flex-row justify-between p-3 px-5">
+          <div class="text-left">
+            <h1 class="font-semibold">Lemon Splash</h1>
+            <p>Rp 21.000</p>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="border rounded-full px-4 py-2 transition duration-300 hover:bg-primary hover:text-white">
+              <button><a href="#">Tambah</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-span-12 md:col-span-6 lg:col-span-3 hover:shadow-xl transition duration-300">
+      <div class="rounded-lg bg-white shadow-md overflow-hidden">
+        <img class="h-64 w-full object-cover" src="../assets/product-img/nachos.jpg" alt="">
+        <div class="flex flex-row justify-between p-3 px-5">
+          <div class="text-left">
+            <h1 class="font-semibold">Keripik Nachos</h1>
+            <p>Rp 8.000</p>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="border rounded-full px-4 py-2 transition duration-300 hover:bg-primary hover:text-white">
+              <button><a href="#">Tambah</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-span-12 md:col-span-6 lg:col-span-3 hover:shadow-xl transition duration-300">
+      <div class="rounded-lg bg-white shadow-md overflow-hidden">
+        <img class="h-64 w-full object-cover" src="../assets/product-img/pizza.jpg" alt="">
+        <div class="flex flex-row justify-between p-3 px-5">
+          <div class="text-left">
+            <h1 class="font-semibold">Pizza</h1>
+            <p>Rp 35.000</p>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="border rounded-full px-4 py-2 transition duration-300 hover:bg-primary hover:text-white">
+              <button><a href="#">Tambah</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-span-12 md:col-span-6 lg:col-span-3 hover:shadow-xl transition duration-300">
+      <div class="rounded-lg bg-white shadow-md overflow-hidden">
+        <img class="h-64 w-full object-cover" src="../assets/product-img/potato-wedges.jpg" alt="">
+        <div class="flex flex-row justify-between p-3 px-5">
+          <div class="text-left">
+            <h1 class="font-semibold">Kentang Iris</h1>
+            <p>Rp 15.000</p>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="border rounded-full px-4 py-2 transition duration-300 hover:bg-primary hover:text-white">
+              <button><a href="#">Tambah</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-span-12 md:col-span-6 lg:col-span-3 hover:shadow-xl transition duration-300">
+      <div class="rounded-lg bg-white shadow-md overflow-hidden">
+        <img class="h-64 w-full object-cover" src="../assets/product-img/sandwich.jpg" alt="">
+        <div class="flex flex-row justify-between p-3 px-5">
+          <div class="text-left">
+            <h1 class="font-semibold">Sandwich</h1>
+            <p>Rp 12.000</p>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="border rounded-full px-4 py-2 transition duration-300 hover:bg-primary hover:text-white">
+              <button><a href="#">Tambah</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-span-12 md:col-span-6 lg:col-span-3 hover:shadow-xl transition duration-300">
+      <div class="rounded-lg bg-white shadow-md overflow-hidden">
+        <img class="h-64 w-full object-cover" src="../assets/product-img/spaghetti.jpg" alt="">
+        <div class="flex flex-row justify-between p-3 px-5">
+          <div class="text-left">
+            <h1 class="font-semibold">Spaghetti</h1>
+            <p>Rp 21.000</p>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="border rounded-full px-4 py-2 transition duration-300 hover:bg-primary hover:text-white">
+              <button><a href="#">Tambah</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-span-12 md:col-span-6 lg:col-span-3 hover:shadow-xl transition duration-300">
+      <div class="rounded-lg bg-white shadow-md overflow-hidden">
+        <img class="h-64 w-full object-cover" src="../assets/product-img/steak.jpg" alt="">
+        <div class="flex flex-row justify-between p-3 px-5">
+          <div class="text-left">
+            <h1 class="font-semibold">Steak</h1>
+            <p>Rp 32.000</p>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="border rounded-full px-4 py-2 transition duration-300 hover:bg-primary hover:text-white">
+              <button><a href="#">Tambah</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter -->
+  <div class="mx-8 font-poppins lg:px-16 lg:mx-8 mt-20">
+    <h1 class="text-center text-2xl font-bold text-secondary">Dapatkan promo terbaru dari TITIKOMA</h1>
+    <p class="text-center mt-2">Kami merekomendasikan anda untuk mendapatkan promo terbaru dari kami dengan cara memasukkan E-Mail anda dibawah ini!</p>
+    <form action="/">
+      <div class="flex flex-row justify-center mt-5">
+        <input class="bg-secondary border rounded-tl-full rounded-bl-full py-2 px-4 text-white" placeholder="Masukkan Email" type="text" name="email">
+        <button class="border rounded-tr-full rounded-br-full py-2 px-4 transition duration-300 hover:bg-primary hover:text-white">Kirim</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <div class="bg-primary w-full mt-20 font-poppins">
+    <div class="md:flex md:flex-row gap-6 justify-center md:justify-around mx-8 lg:px-16 lg:mx-8 py-5 text-white text-center md:text-left">
+      <div class="flex flex-col justify-center mt-5">
+        <img class="h-12 mx-auto"  src="../assets/images/semicolon-logo.png" alt="">
+      </div>
+      <div class="flex flex-col mt-5">
+        <h1 class="text-lg font-semibold">Lokasi</h1>
+        <p class="font-thin">Jl. Titikoma No. 21,<br> Ketintang
+          Kota Surabaya, <br>Jawa Timur <br>60231</p>
+      </div>
+      <div class="flex flex-col mt-5">
+        <h1 class="text-lg font-semibold">Halaman</h1>
+        <p class="font-thin hover:underline"><a href="#">Menu</a></p>
+        <p class="font-thin hover:underline"><a href="#">Testimonial</a></p>      
+      </div>
+      <div class="flex flex-col mt-5">
+        <h1 class="text-lg font-semibold">Kontak Kami</h1>
+        <p class="font-thin">contact@titikoma.coffee</p>
+        <p class="font-thin">+62 8392783442</p>
+      </div>
+    </div>
+    <div class="flex flex-row text-white justify-center mt-8 pb-3">
+      <p>Made with </p>
+      <span><svg class="w-5 h-5 mx-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg></span>
+      <p> by Semicolon; Team</p>
+    </div>
+  </div>
+</body>
+<script src="/src/js/script.js"></script>
+</html>
