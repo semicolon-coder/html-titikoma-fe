@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://kit.fontawesome.com/290dc399a6.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/icon/favicon.png">
 </head>
+
 <body>
   <!-- Navbar -->
   <div class="grid grid-cols-12 font-poppins">
@@ -39,13 +42,23 @@
       </div>
       <div class="flex flex-col justify-center px-7 lg:mr-16">
         <span class="w-[35px] h-auto my-auto border border-white rounded-md lg:hidden" onclick="openSidebar()">
-          <svg class="w-6 h-6 m-auto text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>    
+          <svg class="w-6 h-6 m-auto text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
         </span>
         <span class="hidden lg:inline-block">
-          <a href="/src/cart.html"><svg class="w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg></a>
+          <a href="/src/cart.html"><svg class="w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+              </path>
+            </svg></a>
         </span>
       </div>
-      <div class="h-auto w-screen mt-[75px] absolute right-0 -top-[283px] bg-primary flex flex-col justify-center lg:hidden" id="navbar">
+      <div
+        class="h-auto w-screen mt-[75px] absolute right-0 -top-[283px] bg-primary flex flex-col justify-center lg:hidden"
+        id="navbar">
         <div class="h-auto border-t py-2">
           <h1 class="text-white text-center"><a href="/src/index.html">Home</a></h1>
         </div>
@@ -59,7 +72,12 @@
           <h1 class="text-white text-center"><a href="/src/contact.html">Contact</a></h1>
         </div>
         <div class="h-auto border-t py-2 flex justify-center">
-          <a href="/src/cart.html"><svg class="w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg></a>
+          <a href="/src/cart.html"><svg class="w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+              </path>
+            </svg></a>
         </div>
       </div>
     </div>
@@ -67,14 +85,17 @@
 
   <!-- Hero -->
   <div class="font-poppins">
-    <div class="bg-fixed bg-cover bg-center h-96 w-full p-7 lg:h-[550px]" style="background-image: url(../assets/images/hero-img.png);" alt="">
+    <div class="bg-fixed bg-cover bg-center h-96 w-full p-7 lg:h-[550px]"
+      style="background-image: url(../assets/images/hero-img.png);" alt="">
       <div class="text-white text-center sm:pt-12 lg:text-left lg:mx-16 lg:mt-11">
         <h1 class="font-bold text-3xl lg:w-1/3 lg:text-4xl">Nikmati momen Anda dengan Titikoma;</h1>
-        <p class="mt-3 font-th lg:w-1/3">Kami memberikan jenis biji kopi terbaik yang telah diseleksi secara ketat. Bijih kopi kami impor dari negara Guatemala, Colombia, Costa Rica, The Arabian Penisula, Ethiopia, dan Jamaica.</p>
+        <p class="mt-3 font-th lg:w-1/3">Kami memberikan jenis biji kopi terbaik yang telah diseleksi secara ketat.
+          Bijih kopi kami impor dari negara Guatemala, Colombia, Costa Rica, The Arabian Penisula, Ethiopia, dan
+          Jamaica.</p>
         <button class="mt-3 py-2 px-4 bg-primary rounded-md"><a href="#">Beli Sekarang</a></button>
       </div>
     </div>
-  
+
   </div>
 
   <!-- Main Content -->
@@ -85,36 +106,64 @@
     <div class="col-span-12 md:col-span-6 lg:col-span-3 hover:shadow-xl transition duration-300">
       <div class="rounded-lg bg-white shadow-md overflow-hidden">
         <img class="h-64 w-full object-cover" src="../assets/product-img/americano.jpg" alt="">
-        <div class="p-3 text-center lg:text-left">
-          <h1 class="font-semibold">Arabica Coffee</h1>
-          <p>Rp 15.000</p>
+        <div class="flex flex-row justify-between p-3 px-5">
+          <div class="text-left">
+            <h1 class="font-semibold">Arabica Coffee</h1>
+            <p>Rp 15.000</p>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="border rounded-full px-4 py-2 transition duration-300 hover:bg-primary hover:text-white">
+              <button><a href="#">Tambah</a></button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="col-span-12 md:col-span-6 lg:col-span-3 hover:shadow-xl transition duration-300">
       <div class="rounded-lg bg-white shadow-md overflow-hidden">
         <img class="h-64 w-full object-cover" src="../assets/product-img/cappucino.jpg" alt="">
-        <div class="p-3 text-center lg:text-left">
-          <h1 class="font-semibold">Capuccino Coffee</h1>
-          <p>Rp 21.000</p>
+        <div class="flex flex-row justify-between p-3 px-5">
+          <div class="text-left">
+            <h1 class="font-semibold">Capuccino Coffee</h1>
+            <p>Rp 21.000</p>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="border rounded-full px-4 py-2 transition duration-300 hover:bg-primary hover:text-white">
+              <button><a href="#">Tambah</a></button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="col-span-12 md:col-span-6 lg:col-span-3 hover:shadow-xl transition duration-300">
       <div class="rounded-lg bg-white shadow-md overflow-hidden">
         <img class="h-64 w-full object-cover" src="../assets/product-img/lemon-splash.jpg" alt="">
-        <div class="p-3 text-center lg:text-left">
-          <h1 class="font-semibold">Lemon Splash</h1>
-          <p>Rp 24.000</p>
+        <div class="flex flex-row justify-between p-3 px-5">
+          <div class="text-left">
+            <h1 class="font-semibold">Lemon Splash</h1>
+            <p>Rp 24.000</p>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="border rounded-full px-4 py-2 transition duration-300 hover:bg-primary hover:text-white">
+              <button><a href="#">Tambah</a></button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="col-span-12 md:col-span-6 lg:col-span-3 hover:shadow-xl transition duration-300">
       <div class="rounded-lg bg-white shadow-md overflow-hidden">
         <img class="h-64 w-full object-cover" src="../assets/product-img/sandwich.jpg" alt="">
-        <div class="p-3 text-center lg:text-left">
-          <h1 class="font-semibold">Sandwich</h1>
-          <p>Rp 22.000</p>
+        <div class="flex flex-row justify-between p-3 px-5">
+          <div class="text-left">
+            <h1 class="font-semibold">Sandwich</h1>
+            <p>Rp 22.000</p>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="border rounded-full px-4 py-2 transition duration-300 hover:bg-primary hover:text-white">
+              <button><a href="#">Tambah</a></button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -122,9 +171,12 @@
       <img class="h-64 md:h-72 w-full object-cover md:w-2/3" src="../assets/product-img/beef-taco.jpg" alt="">
       <div class="md:flex md:flex-col justify-center">
         <div class="p-4 text-center md:px-24">
-          <h1 class="font-bold text-xl">Melihat pemandangan bagus dengan <span class="text-primary">Beef Taco</span></h1>
+          <h1 class="font-bold text-xl">Melihat pemandangan bagus dengan <span class="text-primary">Beef Taco</span>
+          </h1>
           <p class="mt-3">Ajak teman-teman Anda dan nikmati pemandangan dengan Beef Taco! Promo! Beli 2 dapat 1.</p>
-          <button class="mt-6 py-2 px-6 bg-primary rounded-full text-white shadow-md hover:shadow-xl transition duration-300"><a href="#">Beli Sekarang</a></button>
+          <button
+            class="mt-6 py-2 px-6 bg-primary rounded-full text-white shadow-md hover:shadow-xl transition duration-300"><a
+              href="#">Beli Sekarang</a></button>
         </div>
       </div>
     </div>
@@ -133,14 +185,19 @@
       <div class="md:flex md:flex-col justify-center">
         <div class="p-4 text-center md:px-24">
           <h1 class="font-bold text-xl">Segarkan dengan <span class="text-primary">Capuccino Coffee</span></h1>
-          <p class="mt-3">Segelas cappucino dengan taburan lembut dapat menyegarkan pikiran Anda dan meningkatkan inspirasi Anda.</p>
-          <button class="mt-6 py-2 px-6 bg-primary rounded-full text-white shadow-md hover:shadow-xl transition duration-300"><a href="#">Beli Sekarang</a></button>
+          <p class="mt-3">Segelas cappucino dengan taburan lembut dapat menyegarkan pikiran Anda dan meningkatkan
+            inspirasi Anda.</p>
+          <button
+            class="mt-6 py-2 px-6 bg-primary rounded-full text-white shadow-md hover:shadow-xl transition duration-300"><a
+              href="#">Beli Sekarang</a></button>
         </div>
       </div>
     </div>
     <div class="col-span-12">
-      <div class="flex flex-row justify-center"> 
-        <button class="mt-6 py-2 px-6 border border-primary rounded-full text-primary shadow-md hover:shadow-xl transition duration-300 hover:bg-primary hover:text-white"><a href="#">Lihat Menu</a></button>
+      <div class="flex flex-row justify-center">
+        <button
+          class="mt-6 py-2 px-6 border border-primary rounded-full text-primary shadow-md hover:shadow-xl transition duration-300 hover:bg-primary hover:text-white"><a
+            href="#">Lihat Menu</a></button>
       </div>
     </div>
   </div>
@@ -150,42 +207,52 @@
     <div class="lg:flex lg:flex-row lg:justify-evenly mx-8 font-poppins lg:px-16">
       <div class="flex flex-col justify-center lg:mr-20">
         <div class="my-5 lg:w-80">
-          <h1 class="text-center text-xl font-extrabold text-secondary">Apa kata pelanggan kami tentang <span class="text-primary">kualitas TITIKOMA</span></h1>
-          <p class="text-center mt-2">Kami sangat mengedepankan pelayanan dan kualitas. Mari kita lihat beberapa orang yang memberikan ulasan terhadap TITIKOMA.</p>
+          <h1 class="text-center text-xl font-extrabold text-secondary">Apa kata pelanggan kami tentang <span
+              class="text-primary">kualitas TITIKOMA</span></h1>
+          <p class="text-center mt-2">Kami sangat mengedepankan pelayanan dan kualitas. Mari kita lihat beberapa orang
+            yang memberikan ulasan terhadap TITIKOMA.</p>
         </div>
       </div>
       <div class="grid grid-cols-12 gap-6">
-        <div class="col-span-12 md:col-span-6 xl:col-span-3 bg-white rounded-lg p-5">
+        <div class="col-span-12 md:col-span-6 2xl:col-span-3 bg-white rounded-lg p-5">
           <div class="ml-2 flex text-center flex-col">
             <img class="w-16 h-16 object-cover m-auto rounded-md" src="../assets/images/ryandmasiv.jpg" alt="">
             <h1 class="font-semibold text-lg">Ryan Adi Saputra</h1>
             <p class="font-thin">Freelance</p>
           </div>
-          <p class="mt-5 text-center mx-5">Titikoma; memang terbaik, minuman dan makanan disini cukup terjangkau bagi kantong anak muda serta pelayanan yang modern, berbeda dengan kafe lain pada umumnya. Wajib datang, kalian pasti tidak akan kecewa.</p>
+          <p class="mt-5 text-center mx-5">Titikoma; memang terbaik, minuman dan makanan disini cukup terjangkau bagi
+            kantong anak muda serta pelayanan yang modern, berbeda dengan kafe lain pada umumnya. Wajib datang, kalian
+            pasti tidak akan kecewa.</p>
         </div>
-        <div class="col-span-12 md:col-span-6 xl:col-span-3 bg-white rounded-lg p-5">
+        <div class="col-span-12 md:col-span-6 2xl:col-span-3 bg-white rounded-lg p-5">
           <div class="ml-2 flex text-center flex-col">
             <img class="w-16 h-16 object-cover m-auto rounded-md" src="../assets/images/person1.jpg" alt="">
             <h1 class="font-semibold text-lg">Nathanael</h1>
             <p class="font-thin">Manager</p>
           </div>
-          <p class="mt-5 text-center mx-5">Sering hangout bareng temen disini dan emang suasananya asik banget. Paling suka sama Honey Pancake disini, lembut sama madunya manis semanis aku, xixixi. Pokok terdebest deh kalau kesini, recommended banget donggg.</p>
+          <p class="mt-5 text-center mx-5">Sering hangout bareng temen disini dan emang suasananya asik banget. Paling
+            suka sama Honey Pancake disini, lembut sama madunya manis semanis aku, xixixi. Pokok terdebest deh kalau
+            kesini, recommended banget donggg.</p>
         </div>
-        <div class="col-span-12 md:col-span-6 xl:col-span-3 bg-white rounded-lg p-5">
+        <div class="col-span-12 md:col-span-6 2xl:col-span-3 bg-white rounded-lg p-5">
           <div class="ml-2 flex text-center flex-col">
             <img class="w-16 h-16 object-cover m-auto rounded-md" src="../assets/images/person2.jpg" alt="">
             <h1 class="font-semibold text-lg">Harits</h1>
             <p class="font-thin">Desainer</p>
           </div>
-          <p class="mt-5 text-center mx-5">Ngopi disini sambil garap kerjaan kantor memang dapat diandalkan, wifi cepet, tempat nyaman, dan pastinya ada coworking spacenya yang pasti aman. Cafe jaman now yang gua rekom buat kalian yang pingin WFH.</p>
+          <p class="mt-5 text-center mx-5">Ngopi disini sambil garap kerjaan kantor memang dapat diandalkan, wifi cepet,
+            tempat nyaman, dan pastinya ada coworking spacenya yang pasti aman. Cafe jaman now yang gua rekom buat
+            kalian yang pingin WFH.</p>
         </div>
-        <div class="col-span-12 md:col-span-6 xl:col-span-3 bg-white rounded-lg p-5">
+        <div class="col-span-12 md:col-span-6 2xl:col-span-3 bg-white rounded-lg p-5">
           <div class="ml-2 flex text-center flex-col">
             <img class="w-16 h-16 object-cover m-auto rounded-md" src="../assets/images/person3.jpg" alt="">
             <h1 class="font-semibold text-lg">Cassie</h1>
             <p class="font-thin">Desainer</p>
           </div>
-          <p class="mt-5 text-center mx-5">Ngopi disini sambil garap kerjaan kantor memang dapat diandalkan, wifi cepet, tempat nyaman, dan pastinya ada coworking spacenya yang pasti aman. Cafe jaman now yang gua rekom buat kalian yang pingin WFH.</p>
+          <p class="mt-5 text-center mx-5">Ngopi disini sambil garap kerjaan kantor memang dapat diandalkan, wifi cepet,
+            tempat nyaman, dan pastinya ada coworking spacenya yang pasti aman. Cafe jaman now yang gua rekom buat
+            kalian yang pingin WFH.</p>
         </div>
       </div>
     </div>
@@ -194,20 +261,24 @@
   <!-- Newsletter -->
   <div class="mx-8 font-poppins lg:px-16 lg:mx-8 mt-20">
     <h1 class="text-center text-2xl font-bold text-secondary">Dapatkan promo terbaru dari TITIKOMA</h1>
-    <p class="text-center mt-2">Kami merekomendasikan anda untuk mendapatkan promo terbaru dari kami dengan cara memasukkan E-Mail anda dibawah ini!</p>
+    <p class="text-center mt-2">Kami merekomendasikan anda untuk mendapatkan promo terbaru dari kami dengan cara
+      memasukkan E-Mail anda dibawah ini!</p>
     <form action="/">
       <div class="flex flex-row justify-center mt-5">
-        <input class="bg-secondary border rounded-tl-full rounded-bl-full py-2 px-2 lg:px-4 text-white" placeholder="Masukkan Email" type="text" name="email">
-        <button class="border rounded-tr-full rounded-br-full py-2 px-2 lg:px-4 transition duration-300 hover:bg-primary hover:text-white">Kirim</button>
+        <input class="bg-secondary border rounded-tl-full rounded-bl-full py-2 px-2 lg:px-4 text-white"
+          placeholder="Masukkan Email" type="text" name="email">
+        <button
+          class="border rounded-tr-full rounded-br-full py-2 px-2 lg:px-4 transition duration-300 hover:bg-primary hover:text-white">Kirim</button>
       </div>
     </form>
   </div>
 
   <!-- Footer -->
   <div class="bg-primary w-full mt-20 font-poppins">
-    <div class="md:flex md:flex-row gap-6 justify-center md:justify-around mx-8 lg:px-16 lg:mx-8 py-5 text-white text-center md:text-left">
+    <div
+      class="md:flex md:flex-row gap-6 justify-center md:justify-around mx-8 lg:px-16 lg:mx-8 py-5 text-white text-center md:text-left">
       <div class="flex flex-col justify-center mt-5">
-        <img class="h-12 mx-auto"  src="../assets/images/semicolon-logo.png" alt="">
+        <img class="h-12 mx-auto" src="../assets/images/semicolon-logo.png" alt="">
       </div>
       <div class="flex flex-col mt-5">
         <h1 class="text-lg font-semibold">Lokasi</h1>
@@ -217,7 +288,7 @@
       <div class="flex flex-col mt-5">
         <h1 class="text-lg font-semibold">Halaman</h1>
         <p class="font-thin hover:underline"><a href="#">Menu</a></p>
-        <p class="font-thin hover:underline"><a href="#">Testimonial</a></p>      
+        <p class="font-thin hover:underline"><a href="#">Testimonial</a></p>
       </div>
       <div class="flex flex-col mt-5">
         <h1 class="text-lg font-semibold">Kontak Kami</h1>
@@ -227,10 +298,15 @@
     </div>
     <div class="flex flex-row text-white justify-center mt-8 pb-3">
       <p>Made with </p>
-      <span><svg class="w-5 h-5 mx-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg></span>
+      <span><svg class="w-5 h-5 mx-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+            clip-rule="evenodd"></path>
+        </svg></span>
       <p> by Semicolon; Team</p>
     </div>
   </div>
 </body>
 <script src="/src/js/script.js"></script>
+
 </html>
