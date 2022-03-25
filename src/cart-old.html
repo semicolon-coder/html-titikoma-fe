@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - TITIKOMA</title>
+  <link rel="stylesheet" href="/src/css/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/290dc399a6.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/icon/favicon.png">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="grid grid-cols-12 font-poppins">
+    <div class="col-span-12 bg-primary h-[75px] flex flex-row justify-between">
+      <div class="flex flex-col justify-center px-7 lg:ml-16 w-56">
+        <img src="../assets/images/semicolon-logo.png" alt="">
+      </div>
+      <div class="hidden lg:inline-flex">
+        <div class="h-auto flex flex-row justify-between">
+          <div class="h-auto mx-5 flex flex-col justify-center">
+            <h1 class="text-white text-center hover:border-b"><a href="/src/index.html">Home</a></h1>
+          </div>
+          <div class="mx-5 flex flex-col justify-center">
+            <h1 class="text-white text-center hover:border-b"><a href="/src/menu.html">Menu</a></h1>
+          </div>
+          <div class="h-auto mx-5 flex flex-col justify-center">
+            <h1 class="text-white text-center hover:border-b"><a href="/src/testimonial.html">Testimonial</a></h1>
+          </div>
+          <div class="h-auto mx-5 flex flex-col justify-center">
+            <h1 class="text-white text-center hover:border-b"><a href="/src/contact.html">Contact</a></h1>
+          </div>
+          <div class="h-auto mx-5 flex flex-col justify-center">
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center px-7 lg:mr-16">
+        <span class="w-[35px] h-auto my-auto border border-white rounded-md lg:hidden" onclick="openSidebar()">
+          <svg class="w-6 h-6 m-auto text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </span>
+        <span class="hidden lg:inline-block">
+          <a href="/src/cart.html"><svg class="w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+              </path>
+            </svg></a>
+        </span>
+      </div>
+      <div
+        class="h-auto w-screen mt-[75px] absolute right-0 -top-[283px] bg-primary flex flex-col justify-center lg:hidden"
+        id="navbar">
+        <div class="h-auto border-t py-2">
+          <h1 class="text-white text-center"><a href="/src/index.html">Home</a></h1>
+        </div>
+        <div class="h-auto border-t py-2">
+          <h1 class="text-white text-center"><a href="/src/menu.html">Menu</a></h1>
+        </div>
+        <div class="h-auto border-t py-2">
+          <h1 class="text-white text-center"><a href="/src/testimonial.html">Testimonial</a></h1>
+        </div>
+        <div class="h-auto border-t py-2">
+          <h1 class="text-white text-center"><a href="/src/contact.html">Contact</a></h1>
+        </div>
+        <div class="h-auto border-t py-2 flex justify-center">
+          <a href="/src/cart.html"><svg class="w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+              </path>
+            </svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="flex justify-center my-6 mx-8 font-poppins lg:px-16 lg:mx-8 overflow-hidden">
+    <div class="flex flex-col w-full p-8 text-gray-800 bg-white">
+      Customer Data
+      <div class="my-4 -mx-2 lg:flex">
+        <div class="lg:px-2 w-full">
+          <div class="p-4 bg-gray-100 rounded-full">
+            <h1 class="ml-2 font-bold uppercase">Data Pelanggan</h1>
+          </div>
+          <div class="px-4 mt-4">
+            <p class="mb-2">Nama Lengkap</p>
+            <input type="text" class="w-full px-3 py-2 border border-secondary rounded-full text-sm"
+              placeholder="Masukkan nama lengkap anda..">
+          </div>
+          <div class="px-4 mt-2">
+            <p class="mb-2">Email</p>
+            <input type="text" class="w-full px-3 py-2 border border-secondary rounded-full text-sm"
+              placeholder="Masukkan email anda...">
+          </div>
+          <div class="px-4 mt-2">
+            <p class="mb-2">Nomor HP</p>
+            <input type="text" class="w-full px-3 py-2 border border-secondary rounded-full text-sm"
+              placeholder="Masukkan nomor hp anda..">
+          </div>
+        </div>
+      </div>
+      <hr class="my-6">
+      <!-- Order Detail -->
+      <div class="my-4">
+        <div class="lg:px-2 w-full">
+          <div class="p-4 bg-gray-100 rounded-full">
+            <h1 class="ml-2 font-bold uppercase">Detail Order</h1>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center p-4">
+          <div class="flex flex-row justify-between">
+            <div class="flex flex-col justify-center">
+              <div class="w-[120px] h-[100px]">
+                <img class="overflow-hidden rounded-lg" src="../assets/product-img/americano.jpg" alt="">
+              </div>
+            </div>
+            <div class="flex flex-col justify-center ml-4">
+              <h1>Americano Black Coffee</h1>
+              <p>Rp 13.000</p>
+              <div class="flex flex-row mt-4">
+                <div class="w-[6px] h-[6px] mr-10">
+                  <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <span class="border-y border-l border-gray-400 rounded-l-md p-1">
+                  <svg class="w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                  </svg>
+                </span>
+                <input id="stock" type="Kategori" name="stock" value="0"
+                  class="border border-gray-400 p-1 pl-2 font-thin text-sm text-center w-full">
+                <span class="border-y border-r border-gray-400 rounded-r-md p-1">
+                  <svg class="w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+          <hr class="my-6">
+          <div class="flex flex-row justify-between">
+            <div class="flex flex-col justify-center">
+              <div class="w-[120px] h-[100px]">
+                <img class="overflow-hidden rounded-lg" src="../assets/product-img/americano.jpg" alt="">
+              </div>
+            </div>
+            <div class="flex flex-col justify-center ml-4">
+              <h1>Americano Black Coffee</h1>
+              <p>Rp 13.000</p>
+              <div class="flex flex-row mt-4">
+                <div class="w-[6px] h-[6px] mr-10">
+                  <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <span class="border-y border-l border-gray-400 rounded-l-md p-1">
+                  <svg class="w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                  </svg>
+                </span>
+                <input id="stock" type="Kategori" name="stock" value="0"
+                  class="border border-gray-400 p-1 pl-2 font-thin text-sm text-center w-full">
+                <span class="border-y border-r border-gray-400 rounded-r-md p-1">
+                  <svg class="w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 md:mt-0 w-full">
+          <div class="p-4">
+            <div class="flex justify-between border-b">
+              <div class="lg:px-4 lg:py-2 m-2 text-lg lg:text-xl font-bold text-center text-gray-800">
+                Subtotal
+              </div>
+              <div class="lg:px-4 lg:py-2 m-2 lg:text-lg font-bold text-center text-gray-900">
+                Rp 84.000
+              </div>
+            </div>
+            <div class="flex justify-between pt-4 border-b">
+              <div class="lg:px-4 lg:py-2 m-2 text-lg lg:text-xl font-bold text-center text-gray-800">
+                Tax
+              </div>
+              <div class="lg:px-4 lg:py-2 m-2 lg:text-lg font-bold text-center text-gray-900">
+                10%
+              </div>
+            </div>
+            <div class="flex justify-between pt-4">
+              <div class="lg:px-4 lg:py-2 m-2 text-lg lg:text-xl font-bold text-center text-gray-800">
+                Total
+              </div>
+              <div class="lg:px-4 lg:py-2 m-2 lg:text-lg font-bold text-center text-gray-900">
+                Rp 92.400
+              </div>
+            </div>
+            <a href="#">
+              <button
+                class="flex justify-center w-full px-10 py-3 mt-6 font-medium text-white uppercase bg-primary rounded-full shadow item-center hover:shadow-lg transition duration-300">
+                <span class="ml-2 mt-5px font-semibold">Pesan Sekarang</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="bg-primary w-full mt-20 font-poppins">
+    <div
+      class="md:flex md:flex-row gap-6 justify-center md:justify-around mx-8 lg:px-16 lg:mx-8 py-5 text-white text-center md:text-left">
+      <div class="flex flex-col justify-center mt-5">
+        <img class="h-12 mx-auto" src="../assets/images/semicolon-logo.png" alt="">
+      </div>
+      <div class="flex flex-col mt-5">
+        <h1 class="text-lg font-semibold">Lokasi</h1>
+        <p class="font-thin">Jl. Titikoma No. 21,<br> Ketintang
+          Kota Surabaya, <br>Jawa Timur <br>60231</p>
+      </div>
+      <div class="flex flex-col mt-5">
+        <h1 class="text-lg font-semibold">Halaman</h1>
+        <p class="font-thin hover:underline"><a href="#">Menu</a></p>
+        <p class="font-thin hover:underline"><a href="#">Testimonial</a></p>
+      </div>
+      <div class="flex flex-col mt-5">
+        <h1 class="text-lg font-semibold">Kontak Kami</h1>
+        <p class="font-thin">contact@titikoma.coffee</p>
+        <p class="font-thin">+62 8392783442</p>
+      </div>
+    </div>
+    <div class="flex flex-row text-white justify-center mt-8 pb-3">
+      <p>Made with </p>
+      <span><svg class="w-5 h-5 mx-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+            clip-rule="evenodd"></path>
+        </svg></span>
+      <p> by Semicolon; Team</p>
+    </div>
+  </div>
+</body>
+<script src="/src/js/script.js"></script>
+
+</html>
